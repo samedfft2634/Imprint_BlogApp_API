@@ -40,6 +40,9 @@ app.all("/", (req, res) => {
 
 app.use(require("./src/routes"));
 
-/* _______________________ _ _______________________ */
+/* ______________________________________________ */
+
+app.use(require("./src/middlewares/errorHandler"));
+
 app.listen(PORT, HOST, () => console.log(`http://${HOST}:${PORT}`));
 // node swaggerAutogen.js 
