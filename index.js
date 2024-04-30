@@ -45,4 +45,5 @@ app.use(require("./src/routes"));
 app.use(require("./src/middlewares/errorHandler"));
 
 app.listen(PORT, HOST, () => console.log(`http://${HOST}:${PORT}`));
+// require("./src/helpers/sync")();
 // node swaggerAutogen.js 
