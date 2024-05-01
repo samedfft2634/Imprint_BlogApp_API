@@ -19,6 +19,8 @@ app.use(express.json());
 
 app.use("/upload", express.static("./upload"));
 
+app.use(require("./src/middlewares/authentication"));
+
 app.use(require('./src/middlewares/logger'))
 
 app.use(require('./src/middlewares/queryHandler'))
