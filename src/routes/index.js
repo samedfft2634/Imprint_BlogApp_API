@@ -11,6 +11,8 @@ router.use('/users', require('./user'))
 router.use('/tokens', require('./token'))
 // category:
 router.use('/categories', require('./category'))
+// comment:
+router.use('/comments', require('./comment'))
 
 /* ______________________________________________ */
 module.exports = router 
